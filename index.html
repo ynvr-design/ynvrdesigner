@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио Яна</title>
+    <link rel="stylesheet" href="static/styles/style.css">
+</head>
+<body>
+    
+    <div class="background">
+        <div class="content">
+            <header class="header">
+                <div class="contacts">
+                    <a href="mailto:ynvr132@gmail.com">Почта</a>
+                    <a href="https://t.me/ynvr132" target="_blank">Telegram</a>
+                    <a href="https://www.instagram.com/ynvrdesign" target="_blank">Instagram</a>
+                </div>
+            </header>
+            
+            <section class="about-me">
+                <div class="logoText">
+                <logo>
+                    <img class="logo" src="static/images/logo_black.png">
+                </logo>
+                <h1>YNVR</h1>
+            </div>
+                <p>
+                    Я дизайнер с уникальным взглядом на визуальное искусство. В свои 20 лет я уже накопил опыт работы с различными стилями и направлениями, которые помогают мне создавать проекты, выделяющиеся на фоне других. Я родом из России, но живу и работаю во Вьетнаме, что даёт мне возможность черпать вдохновение из разных культур и природных красот.
+                </p>
+                <p>
+                    Моя работа фокусируется на создании запоминающихся и эмоциональных визуалов, будь то обложки для треков, постеры или художественные проекты. Мой стиль часто включает атмосферные детали, глубокий символизм и мрачные, но выразительные тона.
+                </p>
+                <p>
+                    Если вы ищете дизайнера с тонким чувством стиля и глубоким подходом к творчеству, я готов помочь вам реализовать самые смелые идеи!
+                </p>
+                <button class="contact-button" onclick="window.location.href='https://t.me/ynvr132'">Написать в Telegram</button>
+            </section>
+
+            <section class="portfolio">
+                <h2>Обложки</h2>
+                <button class="view-works-button" onclick="openPortfolioModal('portfolio-modal-covers')">Посмотреть работы</button>
+            </section>
+            <section class="portfolio">
+                <h2>Постеры</h2>
+                <button class="view-works-button" onclick="openPortfolioModal('portfolio-modal-posters')">Посмотреть работы</button>
+            </section>
+        </div>
+    </div>
+
+    <div id="portfolio-modal-covers" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePortfolioModal('portfolio-modal-covers')">&times;</span>
+            <div class="modal-gallery">
+                <img src="static/images/ASSASIN.png" alt="Работа 1">
+                <img src="static/images/1232.jpg" alt="Работа 2">
+                <img src="static/images/malchik.png" alt="Работа 3">
+                <img src="static/images/cherep.jpg" alt="Работа 4">
+                <img src="static/images/hz.jpg" alt="Работа 5">
+                <img src="static/images/yes.png" alt="Работа 6">
+                <img src="static/images/advoid.jpg" alt="Работа 7">
+                <img src="static/images/ass.jpg" alt="Работа 8">
+                <img src="static/images/puff.jpg" alt="Работа 9">
+                <img src="static/images/RAMKA.jpg" alt="Работа 10">
+                <img src="static/images/yeaa.jpg" alt="Работа 11">
+                <img src="static/images/rewew.jpg" alt="Работа 12">
+                <img src="static/images/seders.jpg" alt="Работа 13">
+                <img src="static/images/Heterochromia.jpg" alt="Работа 14">
+                <img src="static/images/samoletik.jpg" alt="Работа 15">
+                <img src="static/images/boashk.jpg" alt="Работа 16">
+                <img src="static/images/damn.jpg" alt="Работа 17">
+                <img src="static/images/rider.jpg" alt="Работа 18">
+                <img src="static/images/demon.jpg" alt="Работа 19">
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio-modal-posters" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePortfolioModal('portfolio-modal-posters')">&times;</span>
+            <div class="modal-gallery">
+                <img src="static/images/poster1.png" alt="Постер 1">
+                <img src="static/images/poster2.jpg" alt="Постер 2">
+                <img src="static/images/poster3.png" alt="Постер 3">
+                <img src="static/images/poster4.png" alt="Постер 4">
+                <img src="static/images/poster5.png" alt="Постер 5">
+                
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    <script>
+        function openPortfolioModal(modalId) {
+            document.getElementById(modalId).style.display = 'block';
+        }
+
+        function closePortfolioModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        }
+    </script>
+    
+
+<footer class="footer">
+    <p>&copy; 2024 Все права защищены.</p>
+    <p>Дизайн и разработка: YNVR</p>
+</footer>
+</body>
+</html>
+        
