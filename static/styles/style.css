@@ -26,10 +26,12 @@ body {
 
 .logoText {
     display: grid;
-    grid-template-columns: 150px 1fr;
+    grid-template-columns: 150px 1fr; /* Фиксируем ширину логотипа */
     align-items: center;
     gap: 10px;
+    justify-content: center; /* Центрируем сетку */
 }
+
 
 .content {
     text-align: center;
@@ -59,9 +61,8 @@ body {
 }
 
 .about-me h1 {
-    font-size: 2.5em;
-    margin: 20px 0;
-} 
+    font-size: 3em;
+}
 
 .about-me p {
     font-size: 1em;
@@ -175,18 +176,24 @@ body {
 }
 
 /* Адаптивные стили */
-@media (max-width: 768px) {
+@media (min-width: 769px) {
     .logoText {
-        grid-template-columns: 1fr;
-        text-align: center;
+        display: grid;
+        grid-template-columns: 150px 2fr; /* Фиксируем структуру */
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
     }
 
     .about-me h1 {
-        font-size: 2em;
+        text-align: center;
+        margin: 0;
+        margin-right: 25%;
+        font-size: 5    em;
     }
 
     .about-me p {
-        font-size: 0.9em;
+        font-size: 1.5em;
     }
 
     .header .contacts {
@@ -218,6 +225,5 @@ body {
     }
 
     .modal-gallery img {
-        max-height: 100px;
     }
 }
