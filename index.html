@@ -15,7 +15,7 @@
                     <a href="mailto:ynvr132@gmail.com">Почта</a>
                     <a href="https://t.me/ynvr132" target="_blank">Telegram</a>
                     <a href="https://www.instagram.com/ynvrdesign" target="_blank">Instagram</a>
-                </div>
+                </div>  
             </header>
             
             <section class="about-me">
@@ -52,25 +52,25 @@
         <div class="modal-content">
             <span class="close" onclick="closePortfolioModal('portfolio-modal-covers')">&times;</span>
             <div class="modal-gallery">
-                <img src="static/images/ASSASIN.png" alt="Работа 1">
-                <img src="static/images/1232.jpg" alt="Работа 2">
-                <img src="static/images/malchik.png" alt="Работа 3">
-                <img src="static/images/cherep.jpg" alt="Работа 4">
-                <img src="static/images/hz.jpg" alt="Работа 5">
-                <img src="static/images/yes.png" alt="Работа 6">
-                <img src="static/images/advoid.jpg" alt="Работа 7">
-                <img src="static/images/ass.jpg" alt="Работа 8">
-                <img src="static/images/puff.jpg" alt="Работа 9">
-                <img src="static/images/RAMKA.jpg" alt="Работа 10">
-                <img src="static/images/yeaa.jpg" alt="Работа 11">
-                <img src="static/images/rewew.jpg" alt="Работа 12">
-                <img src="static/images/seders.jpg" alt="Работа 13">
-                <img src="static/images/Heterochromia.jpg" alt="Работа 14">
-                <img src="static/images/samoletik.jpg" alt="Работа 15">
-                <img src="static/images/boashk.jpg" alt="Работа 16">
-                <img src="static/images/damn.jpg" alt="Работа 17">
-                <img src="static/images/rider.jpg" alt="Работа 18">
-                <img src="static/images/demon.jpg" alt="Работа 19">
+                <img src="static/images/ASSASIN.png" alt="Работа 1" onclick="openImageModal(this.src)">
+                <img src="static/images/1232.jpg" alt="Работа 2" onclick="openImageModal(this.src)">
+                <img src="static/images/malchik.png" alt="Работа 3" onclick="openImageModal(this.src)">
+                <img src="static/images/cherep.jpg" alt="Работа 4" onclick="openImageModal(this.src)">
+                <img src="static/images/hz.jpg" alt="Работа 5" onclick="openImageModal(this.src)">
+                <img src="static/images/yes.png" alt="Работа 6" onclick="openImageModal(this.src)">
+                <img src="static/images/advoid.jpg" alt="Работа 7" onclick="openImageModal(this.src)">
+                <img src="static/images/ass.jpg" alt="Работа 8" onclick="openImageModal(this.src)">
+                <img src="static/images/puff.jpg" alt="Работа 9" onclick="openImageModal(this.src)">
+                <img src="static/images/RAMKA.jpg" alt="Работа 10" onclick="openImageModal(this.src)">
+                <img src="static/images/yeaa.jpg" alt="Работа 11" onclick="openImageModal(this.src)">
+                <img src="static/images/rewew.jpg" alt="Работа 12" onclick="openImageModal(this.src)">
+                <img src="static/images/seders.jpg" alt="Работа 13" onclick="openImageModal(this.src)">
+                <img src="static/images/Heterochromia.jpg" alt="Работа 14" onclick="openImageModal(this.src)">
+                <img src="static/images/samoletik.jpg" alt="Работа 15" onclick="openImageModal(this.src)">
+                <img src="static/images/boashk.jpg" alt="Работа 16" onclick="openImageModal(this.src)">
+                <img src="static/images/damn.jpg" alt="Работа 17" onclick="openImageModal(this.src)">
+                <img src="static/images/rider.jpg" alt="Работа 18" onclick="openImageModal(this.src)">
+                <img src="static/images/demon.jpg" alt="Работа 19" onclick="openImageModal(this.src)">
             </div>
         </div>
     </div>
@@ -79,11 +79,11 @@
         <div class="modal-content">
             <span class="close" onclick="closePortfolioModal('portfolio-modal-posters')">&times;</span>
             <div class="modal-gallery">
-                <img src="static/images/poster1.png" alt="Постер 1">
-                <img src="static/images/poster2.jpg" alt="Постер 2">
-                <img src="static/images/poster3.png" alt="Постер 3">
-                <img src="static/images/poster4.png" alt="Постер 4">
-                <img src="static/images/poster5.png" alt="Постер 5">
+                <img src="static/images/poster1.png" alt="Постер 1" onclick="openImageModal(this.src)">
+                <img src="static/images/poster2.jpg" alt="Постер 2" onclick="openImageModal(this.src)">
+                <img src="static/images/poster3.png" alt="Постер 3" onclick="openImageModal(this.src)">
+                <img src="static/images/poster4.png" alt="Постер 4" onclick="openImageModal(this.src)">
+                <img src="static/images/poster5.png" alt="Постер 5" onclick="openImageModal(this.src)">
                 
             </div>
         </div>
@@ -100,6 +100,23 @@
             document.getElementById(modalId).style.display = 'none';
         }
     </script>
+
+<script>
+    function openImageModal(src) {
+        const modal = document.getElementById('image-modal');
+        const modalImage = document.getElementById('modal-image');
+        modalImage.src = src;
+        modal.style.display = 'flex';
+    }
+
+    function closeImageModal() {
+        document.getElementById('image-modal').style.display = 'none';
+    }
+</script>
+<div id="image-modal" class="image-modal">
+    <span class="close" onclick="closeImageModal()">&times;</span>
+    <img id="modal-image" class="modal-image" src="" alt="Полный размер">
+</div>  
     
 
 <footer class="footer">
