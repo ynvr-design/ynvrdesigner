@@ -45,6 +45,10 @@
                 <h2>Постеры</h2>
                 <button class="view-works-button" onclick="openPortfolioModal('portfolio-modal-posters')">Посмотреть работы</button>
             </section>
+            <section class="portfolio">
+                <h2>Для продажи</h2>
+                <button class="view-works-button" onclick="openPortfolioModal('portfolio-modal-sale-covers')">Посмотреть работы</button>
+            </section>
         </div>
     </div>
 
@@ -75,7 +79,7 @@
                 <img src="static/images/Знакомтесь с.png" alt="Работа 21" onclick="openImageModal(this.src)">
             </div>
         </div>
-    </div>
+    </div>  
 
     <div id="portfolio-modal-posters" class="modal">
         <div class="modal-content">
@@ -91,12 +95,37 @@
         </div>
     </div>
 
+    <div id="portfolio-modal-sale-covers" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePortfolioModal('portfolio-modal-sale-covers')">&times;</span>
+            <div class="modal-gallery">
+                <img src="static/images/boashk.jpg" alt="Обложка для продажи 1" onclick="openImageModal(this.src)">
+                <img src="static/images/CULTURE.png" alt="Обложка для продажи 2" onclick="openImageModal(this.src)">
+                <img src="static/images/Heterochromia.jpg" alt="Обложка для продажи 3" onclick="openImageModal(this.src)">
+                <img src="static/images/hz.jpg" alt="Обложка для продажи 4" onclick="openImageModal(this.src)">
+                <img src="static/images/ASSASIN.png" alt="Обложка для продажи 5" onclick="openImageModal(this.src)">
+                <img src="static/images/malchik.png" alt="Обложка для продажи 6" onclick="openImageModal(this.src)">
+                <img src="static/images/RAMKA.jpg" alt="Обложка для продажи 7" onclick="openImageModal(this.src)">
+                <img src="static/images/rider.jpg" alt="Обложка для продажи 8" onclick="openImageModal(this.src)">
+                <img src="static/images/seders.jpg" alt="Обложка для продажи 9" onclick="openImageModal(this.src)">
+                <img src="static/images/Sorrow Dante.png" alt="Обложка для продажи 10" onclick="openImageModal(this.src)">
+                <img src="static/images/Знакомтесь с.png" alt="Обложка для продажи 11" onclick="openImageModal(this.src)">
+                
+            </div>
+        </div>
+    </div>
+    
+
 </div>
+
+
 
     <script>
         function openPortfolioModal(modalId) {
             document.getElementById(modalId).style.display = 'block';
         }
+
+        
 
         function closePortfolioModal(modalId) {
             document.getElementById(modalId).style.display = 'none';
