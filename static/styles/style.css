@@ -1,264 +1,271 @@
+/* Основные стили */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    color: #fff;
-    background: #111;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background: #111;
 }
 
 .background {
-    background-image: url('../images/tetx.png');
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    min-height: 100vh; /* Используем min-height вместо height для лучшей адаптации */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  background-image: url("../images/tetx.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 100vh; /* Используем min-height вместо height для лучшей адаптации */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
 }
 
 .logoText {
-    display: grid;
-    grid-template-columns: 150px 1fr; /* Фиксируем ширину логотипа */
-    align-items: center;
-    gap: 10px;
-    justify-content: center; /* Центрируем сетку */
+  display: grid;
+  grid-template-columns: 150px 1fr; /* Фиксируем ширину логотипа */
+  align-items: center;
+  gap: 10px;
+  justify-content: center; /* Центрируем сетку */
 }
 
-
 .content {
-    text-align: center;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
-    width: 90%;
-    max-width: 800px;
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  width: 90%;
+  max-width: 800px;
 }
 
 .header .contacts {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
 .header .contacts a {
-    color: #00bcd4;
-    text-decoration: none;
-    font-size: 1em;
+  color: #00bcd4;
+  text-decoration: none;
+  font-size: 1em;
 }
 
 .header .contacts a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .about-me h1 {
-    font-size: 3em;
+  font-size: 3em;
 }
 
 .about-me p {
-    font-size: 1em;
-    line-height: 1.5;
-    margin: 15px 0;
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 15px 0;
 }
 
 .contact-button {
-    background: #00bcd4;
-    color: #111;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1em;
-    cursor: pointer;
+  background: #00bcd4;
+  color: #111;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
 }
 
 .contact-button:hover {
-    background: #0097a7;
+  background: #0097a7;
 }
 
 .portfolio {
-    margin-top: 20px;
-    
+  margin-top: 20px;
 }
 
 .portfolio h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
+  font-size: 1.5em;
+  margin-bottom: 10px;
 }
 
 .view-works-button {
-    background: #00bcd4;
-    color: #111;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1em;
-    cursor: pointer;
+  background: #00bcd4;
+  color: #111;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
 }
 
 .view-works-button:hover {
-    background: #0097a7;
+  background: #0097a7;
 }
 
 .modal {
-    display: none; /* Это гарантирует, что окно будет скрыто по умолчанию */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
+  display: none; /* Это гарантирует, что окно будет скрыто по умолчанию */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
 }
 
 .modal-content {
-    background: #222;
-    padding: 20px;
-    border-radius: 10px;
-    position: relative;
-    width: 90%;
-    max-width: 1200px;
-    overflow: auto;
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  overflow: auto;
 }
 
 .modal-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Адаптивное количество колонок */
-    gap: 5px;
-    justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(100px, 1fr)
+  ); /* Адаптивное количество колонок */
+  gap: 5px;
+  justify-items: center;
 }
 
 .modal-gallery img {
-    max-width: 100%; /* Ограничиваем ширину контейнера */
-    max-height: 230px; /* Ограничиваем высоту */
-    border-radius: 10px;
+  max-width: 100%; /* Ограничиваем ширину контейнера */
+  max-height: 230px; /* Ограничиваем высоту */
+  border-radius: 10px;
 }
 
 .modal-gallery img:hover {
-    transform: scale(1.05);
-    transition: transform 0.2s;
+  transform: scale(1.05);
+  transition: transform 0.2s;
 }
 
 #portfolio-modal-posters .modal-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, fr)); /* Уменьшаем минимальный размер */
-    gap: 1px; /* Уменьшаем расстояние между постерами */
-    justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(100px, fr)
+  ); /* Уменьшаем минимальный размер */
+  gap: 1px; /* Уменьшаем расстояние между постерами */
+  justify-items: center;
 }
 
+
 .close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 2em;
-    color: #ff0000;
-    cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 2em;
+  color: #ff0000;
+  cursor: pointer;
 }
 
 .close:hover {
-    color: #00bcd4;
+  color: #00bcd4;
 }
 
 .image-modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.9);
-    justify-content: center;
-    align-items: center;
-    z-index: 2000;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
 }
 
 .image-modal .close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 2em;
-    color: #fff;
-    cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2em;
+  color: #fff;
+  cursor: pointer;
 }
 
 .image-modal .close:hover {
-    color: #00bcd4;
+  color: #00bcd4;
 }
 
 .modal-image {
-    max-width: 90%;
-    max-height: 90%;
-    border-radius: 10px;
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
 }
 
 .footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #111;
-    color: #fff;
-    font-size: 0.9em;
+  text-align: center;
+  padding: 20px;
+  background-color: #111;
+  color: #fff;
+  font-size: 0.9em;
 }
 
 .footer p {
-    margin: 0;
+  margin: 0;
 }
 
 /* Адаптивные стили */
 @media (min-width: 769px) {
-    .logoText {
-        display: grid;
-        grid-template-columns: 150px 2fr; /* Фиксируем структуру */
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-    }
+  .logoText {
+    display: grid;
+    grid-template-columns: 150px 2fr; /* Фиксируем структуру */
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
 
-    .about-me h1 {
-        text-align: center;
-        margin: 0;
-        margin-right: 25%;
-        font-size: 5    em;
-    }
+  .about-me h1 {
+    text-align: center;
+    margin: 0;
+    margin-right: 25%;
+    font-size: 5 em;
+  }
 
-    .about-me p {
-        font-size: 1.5em;
-    }
+  .about-me p {
+    font-size: 1.5em;
+  }
 
-    .header .contacts {
-        flex-direction: flex;
-        gap: 5px;
-    }
+  .header .contacts {
+    flex-direction: flex;
+    gap: 5px;
+  }
 
-    .modal-gallery img {
-        max-height: 100%;
-        gap: 5px;
-    }
+  .modal-gallery img {
+    max-height: 100%;
+    gap: 5px;
+  }
 }
 
 @media (max-width: 480px) {
-    .about-me h1 {
-        font-size: 1.8em;
-    }
+  .about-me h1 {
+    font-size: 1.8em;
+  }
 
-    .about-me p {
-        font-size: 0.8em;
-    }
+  .about-me p {
+    font-size: 0.8em;
+  }
 
-    .contact-button, .view-works-button {
-        font-size: 0.9em;
-        padding: 8px 16px;
-    }
+  .contact-button,
+  .view-works-button {
+    font-size: 0.9em;
+    padding: 8px 16px;
+  }
 
-    .modal-gallery {
-        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-    }
+  .modal-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  }
 }
